@@ -1,8 +1,8 @@
 #!/bin/bash
 
 # Set keyboard-layout & system clock
-loadkeys sv-latin1 &&
-timedatectl set-ntp true &&
+#loadkeys sv-latin1 &&
+#timedatectl set-ntp true &&
 
 # Partitioning
 #wipefs -a /dev/sda &&
