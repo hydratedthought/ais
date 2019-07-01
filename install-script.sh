@@ -12,13 +12,13 @@ parted /dev/sda mkpart ext4 3MiB 100% &&
 parted /dev/sda set 1 bios_grub on &&
 
 # Formatting
-mkfs.ext4 /dev/sda2 &&
+#mkfs.ext4 /dev/sda2 &&
 
 # Mount
-mount /dev/sda2 /mnt &&
+#mount /dev/sda2 /mnt &&
 
 # Install base
-pacstrap /mnt base base-devel &&
+#pacstrap /mnt base base-devel &&
 
 # System configuration
 #genfstab -U /mnt >> /mnt/etc/fstab &&
