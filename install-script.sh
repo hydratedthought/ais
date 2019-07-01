@@ -21,7 +21,7 @@ mount /dev/sda2 /mnt &&
 pacstrap /mnt base base-devel &&
 
 # System configuration
-genfstab -U /mnt >> /mnt/etc/fstab &&
-arch-chroot /mnt &&
-ln -sf /usr/share/zoneinfo/Europe/Stockholm /etc/localtime &&
-hwclock --systohc
+#genfstab -U /mnt >> /mnt/etc/fstab &&
+#arch-chroot /mnt &&
+#ln -sf /usr/share/zoneinfo/Europe/Stockholm /etc/localtime &&
+#hwclock --systohc
