@@ -12,6 +12,7 @@ mkfs.ext4 /dev/sda2
 mount /dev/sda2 /mnt
 pacstrap /mnt base base-devel
 
-#genfstab -U /mnt >> /mnt/etc/fstab
-#arch-chroot /mnt
-#echo "Chroot successful!"
+genfstab -U /mnt >> /mnt/etc/fstab
+echo "Fstab successful!"
+arch-chroot /mnt
+echo "Chroot successful!"
