@@ -13,6 +13,7 @@ mount /dev/sda2 /mnt
 pacstrap /mnt base base-devel
 
 genfstab -U /mnt >> /mnt/etc/fstab
-echo "Fstab successful!"
-arch-chroot /mnt 'sh -c /mnt/first.sh'
+cp first.sh /mnt/root/first.sh
+chmod 777 /mnt/root/first.sh
+arch-chroot /mnt
 echo "Chroot successful!"
