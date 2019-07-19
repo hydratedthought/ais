@@ -14,5 +14,5 @@ pacstrap /mnt base base-devel
 
 genfstab -U /mnt >> /mnt/etc/fstab
 echo "Fstab successful!"
-arch-chroot /mnt
+arch-chroot /mnt 'sh -c /mnt/first.sh'
 echo "Chroot successful!"
